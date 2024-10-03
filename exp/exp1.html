@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>How to open console:
+        <ol>
+            <li>Right click the browser</li>
+            <li>Click inspect</li>
+            <li>Click on the console tab</li>
+        </ol>
+    </h2>
+
+    <script>
+        /*Write a program that takes a lowercase string and capitalizes the first letter of each word in the string. */
+        var userInput = prompt("Enter a lowercase word", "");
+        
+        let text = userInput;
+        let part = text.slice(1);
+        let output = userInput.at(0);
+        let first = output.toUpperCase();
+        console.log(`${first}${part}`);
+    </script>
+</body>
+</html>

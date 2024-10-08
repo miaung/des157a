@@ -17,6 +17,8 @@
 
     <script>
         /*Write a program that takes a lowercase string and capitalizes the first letter of each word in the string. */
+
+        /*
         var userInput = prompt("Enter a lowercase word", "");
         
         let text = userInput;
@@ -24,6 +26,18 @@
         let output = userInput.at(0);
         let first = output.toUpperCase();
         console.log(`${first}${part}`);
+        */
+
+        var userInput = prompt("Enter a sentence.", "");
+        userChange = userInput.replace(userInput[0], userInput[0].toUpperCase());
+
+        for ( var i=1; i < userInput.length; i++ ){
+            if (userChange[i] == " "){
+                userChange = userChange.replace(userChange[i+1], userChange[i+1].toUpperCase());
+            }
+        }
+        console.log(userChange);
+        
     </script>
 </body>
 </html>

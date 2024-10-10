@@ -1,0 +1,208 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background:#1A164F;
+    align-content: center;
+    text-align: center;
+}
+
+header {
+    width: 1100px;
+    height: 200px;
+    font-weight: bold;
+    background: rgb(71,73,161);
+    background: linear-gradient(0deg, rgba(71,73,161,1) 0%, rgba(27,47,96,1) 100%);
+    text-align: center;
+    margin: auto;
+    color: white;
+    position: relative;
+    padding-top: 50px;
+}
+
+header .constellation {
+    max-width: 123px;
+    animation: animation1 6s ease;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 50px;
+    left: 180px;
+}
+
+header .title {
+    margin: auto;
+    width: 70%;
+}
+
+header .star {
+    position: absolute;
+    top: 90px;
+    right: 380px;
+}
+
+header .star:hover {
+    animation: animation2 2s ease;
+}
+
+.diagonal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes animation2 {
+    from {
+        transform: translate(-50%, -50%) translateX(0) translateY(0);
+      }
+      to {
+        transform: translate(-50%, -50%) translateX(150px) translateY(-150px);
+      }
+  }
+  
+.diagonal {
+    animation: diagonal-move-up-right 2s ease-in-out forwards;
+}
+
+h1 {
+    text-align:center;
+}
+
+main{
+    width: 1100px;
+    line-height:1.5em;
+    color:black;
+    text-decoration: none;
+    margin: auto;
+    background: #1A164F;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+main div {
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+main div section {
+    background-color: white;
+    margin: auto;
+}
+
+section h2{
+    background: #4749A1;
+    color: white;
+    text-align: center;
+    width: 250px;
+    padding: 20px 0;
+    margin: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.assignments section ul li{
+    text-align: left;
+}
+
+.assignments section:first-of-type{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.assignments section:last-of-type{
+    border: 5px #4749A1;
+    width: 250px;
+    border-radius: 20px;
+    height: 140px;
+}
+
+.assignments section ul li a{
+    text-decoration: none;
+}
+
+.research section {
+    border-radius: 20px;
+    width: 250px;
+    height: 356px;
+}
+
+
+.research section ul li{
+    text-align: left;
+}
+
+.research section ul li a{
+    text-decoration: none;
+}
+
+.final section{
+    border-radius: 20px;
+    width: 250px;
+    height: 356px;
+}
+
+.final section ul li{
+    text-align: left;
+}
+
+.final section ul li a{
+    text-decoration: none;
+}
+
+footer {
+    background: rgb(71,73,161);
+    background: linear-gradient(0deg, rgba(71,73,161,1) 0%, rgba(27,47,96,1) 100%);
+    width: 1100px;
+    height: 100px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+footer a {
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes animation1 {
+    0%{
+        opacity: 0.1;
+    }
+    10%{
+        opacity: 0.2;
+    }
+    20%{
+        opacity: 0.4;
+    }
+    30%{
+        opacity: 0.6;
+    }
+    40%{
+        opacity: 0.8;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0.8;
+    }
+    70%{
+        opacity: 0.6;
+    }
+    80%{
+        opacity: 0.4;
+    }
+    90%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 0.1;
+    }
+}

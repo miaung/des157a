@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <h2>Based the examples we used in the JS functions Challenges 10-16. Instead of console logging the greeting to the user and the question of the random food offering, insert an h1 and h2 with the corresponding greeting and offering into the body of the document so the user could see the response rather than it hiding out in the console. (Credit: Cory Risch-Smith)</h2>
+    <p id = "firstName"></p>
+    <p id = "hereGift"></p>
+
+    <script>
+        /* Based the examples we used in the JS functions Challenges 10-16. Instead of console logging the greeting to the user and the question of the random food offering, insert an <h1> and <h2> with the corresponding greeting and offering into the body of the document so the user could see the response rather than it hiding out in the console. (Credit: Cory Risch-Smith) */
+
+        var yourName = prompt("Enter your name.", "")
+        var food = ["milk", "toast", "french fries", "cake", "apples"];
+        
+        var myDiv = document.getElementById("firstName");
+        var yourGift = document.getElementById("hereGift");
+
+        function hello(name){
+            
+            if(name == null || name == " "){
+                myDiv.innerHTML = ("You didn't give me your name.");
+            } else {
+                myDiv.innerHTML = (`Hello ${name} and welcome!`)
+            }
+        }
+
+        function randomInt (min, max){
+                return Math.floor ((max - min + 1) * Math.random()) + min;
+        }
+
+        function hospitality(name,gift){
+            console.log(hello(name));
+            var randomGift = gift[randomInt(0, gift.length-1)];
+            yourGift.innerHTML = (`${name}, would you like some ${randomGift}?`);
+        }
+
+        hospitality(yourName, food);
+        </script>
+    </body>
+</html>

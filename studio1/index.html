@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs 2.0</title>
+
+    <!--Normalize CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--Link to Styles Sheet-->
+    <link href="styles.css" rel="stylesheet">
+
+    <!--Link to JS File-->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <main>
+    <h1>You've Got a Message.</h1>
+        <div class="message">
+            <form method="post" action="processor.php">
+                <label for="fName">First Name</label>
+                <input type="text" name="fName" id="fName" value="" required>
+
+                <label for="adj1">Adjective</label>
+                <input type="text" name="adj1" value="" required>
+
+                <label for="clothing">Plural Article of Clothing</label>
+                <input type="text" name="clothing" value="" required>
+
+                <label for="noun2">Noun</label>
+                <input type="text" name="noun2" value="" required>
+
+                <label for="animal">Animal</label>
+                <input type="text" name="animal" value="" required>
+
+                <label for="adj2">Adjective</label>
+                <input type="text" name="adj2" value="" required>
+
+                <input type="submit" name="send" value="View Message">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

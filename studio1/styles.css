@@ -1,12 +1,29 @@
+header {
+    background-color: rgb(230, 230, 230);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    width: 100%;
+    position: sticky;
+    height: 120px;
+    top: 0;
+    left: 0;
+}
+
 h1 {
     text-align: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
+
 label, input {
     display: block;
 }
 
 input {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 fieldset input, fieldset label {
@@ -14,14 +31,71 @@ fieldset input, fieldset label {
 }
 
 fieldset label {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.message {
-    background-color: blue;
+#received {
+    position: absolute;
+    left:100px;
+    background-color: rgb(225, 225, 225);
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 20px;
+    margin-top: 170px;
+    margin-left: 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+#message {
+    position: absolute;
+    background-color: #7AB8FD;
     color: white;
     padding: 20px;
-    max-width: 300px;
+    border-radius: 20px;
+    margin: 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    max-width: 225px;
+    right: 100px;
+    top: 200px;
+    margin-top: 100px;
+}
+
+.pfp{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+
+}
+
+#madlib {
+    position: absolute;
+    bottom: 10px;
+    left:100px;
+    background-color: rgb(225, 225, 225);
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     border-radius: 20px;
     margin-left: 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    max-width: 500px;
+    margin-top: 500px;
 }

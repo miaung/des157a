@@ -4,7 +4,7 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,15 +21,24 @@
 
 </head>
 <body>
-    <main>
-    <h1>You've Got a Message.</h1>
-        <div class="message">
+    <header>
+        <img src="images/monica.jpg" alt="photo of Monica" height=75 width=75 class="pfp">
+        <h1>LOML</h1>
+    </header>
+    <main>       
+        <div id="received">
+            <p>We need to talk.</p>
+        </div>
+        <div id="message">
             <form method="post" action="processor.php">
                 <label for="fName">First Name</label>
                 <input type="text" name="fName" id="fName" value="" required>
 
                 <label for="adj1">Adjective</label>
                 <input type="text" name="adj1" id="adj1" value="" required>
+
+                <label for="noun1">Noun</label>
+                <input type="text" name="noun1" id="noun1" value="" required>
 
                 <label for="clothing">Plural Article of Clothing</label>
                 <input type="text" name="clothing" id="clothing" value="" required>
@@ -43,8 +52,11 @@
                 <label for="adj2">Adjective</label>
                 <input type="text" name="adj2" id="adj2" value="" required>
 
-                <input type="submit" name="send" value="View Message">
+                <input type="submit" name="send" value="submit">
             </form>
+        </div>
+        <div id="madlib">
+            <img src="images/typing.png" alt="imessage typing" height=13 width=50 class="typing">
         </div>
     </main>
 </body>

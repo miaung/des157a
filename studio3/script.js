@@ -7,7 +7,9 @@
     const monster2 = document.querySelector('#Shiromon');
     const messages = document.querySelector('#messages');
     const startBtn = document.querySelector('#start');
+    const startSound = new Audio('sounds/start.mp3');
     const attackBtn = document.querySelector('#attack');
+    const tapSound = new Audio('sounds/tap.mp3');
 
     /* These variables are assigned later and used to keep track of
     the state of the game. Attacker and defender will end up just being
@@ -45,14 +47,15 @@
         gameData.index = Math.round(Math.random());
         messages.innerHTML = `<p>Get ready! <strong>${gameData.monsters[gameData.index]}</strong> was randomly selected to attack first. Click the attack button to see what happens.</p>`;
         attackBtn.className = 'showing';
+        startSound.play();
     });
 
     /* Now that the button is showing, the player can attack */
-    attackBtn.addEventListener('click', monsterAttack );
+    attackBtn.addEventListener('click', monsterAttack);
 
     /* this is where most of the action takes place */
     function monsterAttack(){
-        
+        tapSound.play();
         /* If gameData.index is 1, the statement is true and it must
         be ployer 2's turn. Set the attacker to player 2 and the defender to player 1.
         Set the defenderIndex to zero. If this statement is false, do the opposite. */

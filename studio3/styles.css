@@ -97,6 +97,11 @@ p{
     font-style: normal;
 }
 
+footer {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .hidden {
     visibility: hidden;
     opacity: 0;

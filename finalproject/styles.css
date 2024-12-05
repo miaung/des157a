@@ -1,6 +1,5 @@
 body {
     font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: #333;
@@ -18,7 +17,6 @@ h1 {
     text-align: center;
     color: rgb(122, 84, 75);
     font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
 }
@@ -30,7 +28,6 @@ h2 {
 
 p{
     font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;  
 }
@@ -88,7 +85,6 @@ p{
     background-color: rgb(230, 172, 221);
     color: #d17cc7;
     font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
 }
@@ -100,7 +96,6 @@ p{
     background-color: rgb(230, 172, 221);
     color: #d17cc7;
     font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
 }

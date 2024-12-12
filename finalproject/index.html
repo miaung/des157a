@@ -24,34 +24,39 @@
 <body>
     <h1>Monster Battle!</h1>
     <section id="game">
-        <div>
-            <img src="images/monster1.png" alt="monster 1" width="300" height="300" id="Kuromon">
-            <h2>Kuromon's Health</h2>
-            <!-- The divs inside the healthbar0 and healthbar1 divs are set to position
-            absolute and have a width of 100%. As the game progresses their width is changed to 
-            represent the percentage of health they have left. They have 0 and 1 at the end so that
-            they can be easily targeted by JS based on the index value which is either 0 or 1 -->
-            <div class="health">
-                <div id="healthbar0"><div></div></div><p id="monsterhealth0">100%</p>
+        <div id="KuromonDiv">
+            <img src="images/monster1.png" alt="monster 1" width="150" height="150" id="Kuromon">
+            <div class="nametag">
+                <h2>Kuromon's Health</h2>
+                <!-- The divs inside the healthbar0 and healthbar1 divs are set to position
+                absolute and have a width of 100%. As the game progresses their width is changed to 
+                represent the percentage of health they have left. They have 0 and 1 at the end so that
+                they can be easily targeted by JS based on the index value which is either 0 or 1 -->
+                <div class="health">
+                    <div id="healthbar0"><div></div></div><p id="monsterhealth0">100%</p>
+                </div>
             </div>
         </div>
-        <div>
-            <img src="images/monster2.png" alt="monster 2" width="300" height="300" id="Shiromon">
-            <h2>Shiromon's Health</h2>
-            <div class="health">
-                <div id="healthbar1"><div></div></div><p id="monsterhealth1">100%</p>
+        <div id="ShiromonDiv">
+            <img src="images/monster2.png" alt="monster 2" width="150" height="150" id="Shiromon">
+            <div class="nametag">
+                <h2>Shiromon's Health</h2>
+                <div class="health">
+                    <div id="healthbar1"><div></div></div><p id="monsterhealth1">100%</p>
+                </div>
             </div>
         </div>
     </section>
     <section id="action">
         <div id="messages">
             <p>Press the start button to randomly select the first monster to attack!</p>
-            <button id="start">Start Battle!</button>
+            <button id="start">Start!</button>
         </div>
         <button id="attack" class="hidden">Attack!</button>
     </section>
     <footer>
         <p>Sound Effects by Creator Assets</p>
+        <p>Background Music by Kevin MacLeod - Pixelland</p>
     </footer>
 </body>
 </html>

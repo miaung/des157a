@@ -3,13 +3,14 @@
     console.log('reading js');
 
     /* Variables needed for interface elements in the HTML */
-    const monster1 = document.querySelector('#Kuromon');
-    const monster2 = document.querySelector('#Shiromon');
+    const monster1 = document.querySelector('#KuromonDiv');
+    const monster2 = document.querySelector('#ShiromonDiv');
     const messages = document.querySelector('#messages');
     const startBtn = document.querySelector('#start');
     const startSound = new Audio('sounds/start.mp3');
     const attackBtn = document.querySelector('#attack');
     const tapSound = new Audio('sounds/tap.mp3');
+    const bgSound = new Audio('sounds/bgMusic.mp3');
 
     /* These variables are assigned later and used to keep track of
     the state of the game. Attacker and defender will end up just being
@@ -48,6 +49,7 @@
         messages.innerHTML = `<p>Get ready! <strong>${gameData.monsters[gameData.index]}</strong> was randomly selected to attack first. Click the attack button to see what happens.</p>`;
         attackBtn.className = 'showing';
         startSound.play();
+        bgSound.play(); 
     });
 
     /* Now that the button is showing, the player can attack */
@@ -62,11 +64,17 @@
         if(gameData.index){
             attacker = gameData.monsters[1];
             defender = gameData.monsters[0];
+            monster1.className = 'turn2';
+            monster2.className = 'turn1';
+            //monster2.removeAttribute('class');
             defenderIndex = 0;
         }
         else {
             attacker = gameData.monsters[0];
             defender = gameData.monsters[1];
+            monster1.className = 'turn1';
+            monster2.className = 'turn2';
+            //monster1.removeAttribute('class');
             defenderIndex = 1;
         }
 
